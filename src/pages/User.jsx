@@ -4,8 +4,8 @@ import Header from "../components/Header.jsx";
 function User() {
   return (
     <div>
-      User
       <Header />
+      User
     </div>
   );
 }

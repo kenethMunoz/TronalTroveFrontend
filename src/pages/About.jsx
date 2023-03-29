@@ -4,8 +4,8 @@ import Header from "../components/Header.jsx";
 function About() {
   return (
     <div>
-      Abou
       <Header />
+      Abou
     </div>
   );
 }
