@@ -12,10 +12,10 @@ function Header() {
   const { setIsSearching, setPaletteList } = useContext(PaletteContext);
   const [text, setText] = useState("");
   return (
-    <div className="bg-blue-500 w-full flex justify-center  ">
-      <div className="bg-orange-600 p-10 container flex justify-between items-center">
+    <div className="w-full flex justify-center  ">
+      <div className=" p-5 container flex justify-between items-center">
         {/* home */}
-        <div className="bg-yellow-500">
+        <div className="bg-white hover:bg-lightPurple text-black transition duration-300 ease-in-out px-6 py-3 rounded-xl">
           <Link
             rel="stylesheet"
             to={"/"}
@@ -27,7 +27,7 @@ function Header() {
           </Link>
         </div>
         {/* search */}
-        <div className="bg-red-600">
+        <div className="">
           <form
             onSubmit={async (e) => {
               e.preventDefault();
@@ -43,13 +43,16 @@ function Header() {
             }}
           >
             <input
+              className="rounded-l-xl h-12 px-6 py-3 border-lightPurple "
               type="text"
               placeholder="Palette name"
               onChange={(e) => {
                 setText(e.target.value);
               }}
             />
-            <button>Search</button>
+            <button className="bg-white hover:bg-lightPurple text-black transition duration-300 ease-in-out px-6 py-3 rounded-r-xl">
+              Search
+            </button>
           </form>
         </div>
         {/* nav Menu */}

@@ -10,9 +10,6 @@ export default {
         black: "#000",
         gray: "#666666",
       },
-      customClasses: {
-        "my-custom-class": {},
-      },
     },
   },
   plugins: [],
